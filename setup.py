@@ -57,9 +57,10 @@ setup(
     install_requires=[
         "flat_table >= 1.1.1",
         "pandas >= 1.4.1",
-        # excluded due to bug with ictiopy library solved in next version of pandas
         "pandas != 1.5.1",
         "Orange3 >= 3.31.1",
+        "PyQt5",
+        # TODO Add secd_staplus_client when it's ready
         "smartcitizen-connector == 1.0.3", #Smart Citizen connector should be fixed at a version
         "nest_asyncio"
     ],
