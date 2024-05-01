@@ -8,8 +8,6 @@ from Orange.data.pandas_compat import table_from_frame
 import secd_staplus_client as STAplus
 from pandas import DataFrame
 
-url = 'https://citiobs.demo.secure-dimensions.de/staplustest/v1.1'
-
 # Fixed stations
 class STAplusWidget(OWBaseWidget):
 
