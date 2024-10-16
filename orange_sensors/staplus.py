@@ -5,7 +5,7 @@ from orangewidget.settings import Setting
 from orangewidget import gui
 from orangewidget.utils.widgetpreview import WidgetPreview
 from Orange.data.pandas_compat import table_from_frame
-import secd_staplus_client as STAplus
+import staplus_client as STAplus
 from pandas import DataFrame
 
 

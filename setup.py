@@ -63,7 +63,7 @@ setup(
         # TODO Add secd_staplus_client when it's ready
         "smartcitizen-connector == 1.0.4", #Smart Citizen connector should be fixed at a version
         "nest_asyncio",
-        "git+https://github.com/securedimensions/STAplus-Python-Client.git"
+        "sd-frost-sta-client"
     ],
     keywords=KEYWORDS,
     include_package_data=True,
