@@ -60,9 +60,8 @@ setup(
         "pandas != 1.5.1",
         "Orange3 >= 3.31.1",
         "PyQt5",
-        # TODO Add secd_staplus_client when it's ready
-        "smartcitizen-connector == 1.0.4", #Smart Citizen connector should be fixed at a version
-        "nest_asyncio",
+        "smartcitizen-connector == 1.2.0", #Smart Citizen connector should be fixed at a version
+        "nest_asyncio"
         "sd-frost-sta-client"
     ],
     keywords=KEYWORDS,

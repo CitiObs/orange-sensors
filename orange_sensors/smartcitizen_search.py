@@ -9,7 +9,17 @@ from smartcitizen_connector import SCDevice, search_by_query
 from smartcitizen_connector.tools import dict_unpack
 from pandas import DataFrame
 
-unhashable_columns = ['notify', 'data', 'owner', 'kit', 'location', 'hardware_info', 'postprocessing', 'device_token', 'hardware']
+unhashable_columns = [
+    "notify",
+    "data",
+    "owner",
+    "location",
+    "hardware_info",
+    "postprocessing",
+    "device_token",
+    "hardware",
+    "data_policy"
+]
 
 # Fixed stations
 class SmartcitizenSensorSearchWidget(OWBaseWidget):
@@ -201,12 +211,10 @@ class SmartcitizenSensorSearchWidget(OWBaseWidget):
                         'key': 'tags_name',
                         'value': self.tags_tokenized,
                         'search_matcher': 'in'
-                    } )
+                    })
 
             if len(query_list):
-                devices = search_by_query(
-                    endpoint= 'devices',
-                    search_items= query_list)
+                devices = search_by_query(endpoint= 'devices', search_items= query_list)
             else:
                 self.infoa.setText(f'At least one field is required.')
                 self.info.set_output_summary(self.info.NoOutput)
