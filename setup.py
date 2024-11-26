@@ -61,7 +61,7 @@ setup(
         "Orange3 >= 3.31.1",
         "PyQt5",
         # TODO Add secd_staplus_client when it's ready
-        "smartcitizen-connector == 1.0.4", #Smart Citizen connector should be fixed at a version
+        "smartcitizen-connector == 1.2.0", #Smart Citizen connector should be fixed at a version
         "nest_asyncio"
     ],
     keywords=KEYWORDS,
